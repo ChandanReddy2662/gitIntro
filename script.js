@@ -1,0 +1,7 @@
+const fs = require('fs')
+// input = fs.createReadStream('./input.txt', {highWaterMark: 20})
+// output = fs.createWriteStream('./output.txt')
+// input.open()
+// output.write(input.read())
+input = fs.readFileSync('./input.txt', 'utf-8')
+output = fs.writeFileSync('./output.txt', input)
